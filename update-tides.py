@@ -23,83 +23,170 @@ def download_page():
         return response.read().decode("utf-8", errors="ignore")
 
 
-def html_to_text(html):
-    # Remove scripts and styles
-    text = re.sub(
-        r"<script\b[^>]*>.*?</script>",
-        "",
-        html,
-        flags=re.I | re.S
-    )
-
-    text = re.sub(
-        r"<style\b[^>]*>.*?</style>",
-        "",
-        text,
-        flags=re.I | re.S
-    )
-
-    # Put spaces between HTML elements
-    text = re.sub(r"<br\s*/?>", " ", text, flags=re.I)
-    text = re.sub(r"</[^>]+>", " ", text)
-    text = re.sub(r"<[^>]+>", " ", text)
-
-    text = unescape(text)
-
-    # Collapse all whitespace
-    text = re.sub(r"\s+", " ", text)
-
-    return text.strip()
+def clean_text(value):
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = unescape(value)
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
 
 
 def extract_tides(html):
-    text = html_to_text(html)
 
-    # TideTime displays entries like:
-    # Low 4:22am (0.43m)
-    # High 9:56am (1.93m)
-
-    pattern = re.compile(
-        r"\b(High|Low)\s+"
-        r"(\d{1,2}:\d{2}\s*(?:am|pm))"
-        r"\s*\(\s*(-?\d+(?:\.\d+)?)\s*m\s*\)",
-        re.I
+    # TideTime uses highTide and lowTide elements.
+    # Capture each complete element separately.
+    block_pattern = re.compile(
+        r'<[^>]*class=["\'][^"\']*\b(highTide|lowTide)\b[^"\']*["\'][^>]*>'
+        r'(.*?)'
+        r'</[^>]+>',
+        re.I | re.S
     )
 
-    matches = pattern.findall(text)
+    blocks = block_pattern.findall(html)
 
     tides = []
 
-    for tide_type, tide_time, height in matches:
+    for tide_class, block in blocks:
 
-        tides.append({
-            "type": tide_type.title(),
-            "time": re.sub(
+        text = clean_text(block)
+
+        tide_type = (
+            "High"
+            if tide_class.lower() == "hightide"
+            else "Low"
+        )
+
+        time_match = re.search(
+            r'(\d{1,2}:\d{2}\s*(?:am|pm))',
+            text,
+            re.I
+        )
+
+        height_match = re.search(
+            r'\(\s*(-?\d+(?:\.\d+)?)\s*m\s*\)',
+            text,
+            re.I
+        )
+
+        if time_match and height_match:
+
+            tide_time = re.sub(
                 r"\s+",
                 "",
-                tide_time
-            ).lower(),
-            "height_m": float(height)
-        })
+                time_match.group(1)
+            ).lower()
+
+            tides.append({
+                "type": tide_type,
+                "time": tide_time,
+                "height_m": float(
+                    height_match.group(1)
+                )
+            })
+
+    # Fallback:
+    # If TideTime changes the surrounding HTML,
+    # extract the visible tide sequence from the page.
+    if not tides:
+
+        text = html
+
+        text = re.sub(
+            r"<script\b[^>]*>.*?</script>",
+            " ",
+            text,
+            flags=re.I | re.S
+        )
+
+        text = re.sub(
+            r"<style\b[^>]*>.*?</style>",
+            " ",
+            text,
+            flags=re.I | re.S
+        )
+
+        text = re.sub(
+            r"<[^>]+>",
+            " ",
+            text
+        )
+
+        text = unescape(text)
+
+        text = re.sub(
+            r"\s+",
+            " ",
+            text
+        )
+
+        pattern = re.compile(
+            r'\b(High|Low)\s+'
+            r'(\d{1,2}:\d{2}\s*(?:am|pm))'
+            r'.{0,100}?'
+            r'\(\s*(-?\d+(?:\.\d+)?)\s*m\s*\)',
+            re.I | re.S
+        )
+
+        for tide_type, tide_time, height in pattern.findall(text):
+
+            tides.append({
+                "type": tide_type.title(),
+                "time": re.sub(
+                    r"\s+",
+                    "",
+                    tide_time
+                ).lower(),
+                "height_m": float(height)
+            })
 
     return tides
 
 
 def main():
 
-    print("Downloading TideTime Nova Scotia tide data...")
+    print(
+        "Downloading TideTime Nova Scotia tide data..."
+    )
 
     html = download_page()
 
-    print(f"Downloaded {len(html):,} characters.")
+    print(
+        f"Downloaded {len(html):,} characters."
+    )
 
     tides = extract_tides(html)
 
-    print(f"Found {len(tides)} tide events.")
+    print(
+        f"Found {len(tides)} tide events."
+    )
 
     if not tides:
+
+        # Diagnostic information if the page changes again.
+        print(
+            "highTide occurrences:",
+            len(
+                re.findall(
+                    r"highTide",
+                    html,
+                    re.I
+                )
+            )
+        )
+
+        print(
+            "lowTide occurrences:",
+            len(
+                re.findall(
+                    r"lowTide",
+                    html,
+                    re.I
+                )
+            )
+        )
+
         raise RuntimeError(
-            "No tide entries were found in the TideTime page."
+            "TideTime downloaded successfully, "
+            "but no tide events could be parsed."
         )
 
     output = {
@@ -124,9 +211,15 @@ def main():
             indent=2
         )
 
-    print(f"Saved tide data to {OUTPUT_FILE}")
+    print(
+        f"SUCCESS: Saved {len(tides)} "
+        f"tide events to {OUTPUT_FILE}"
+    )
+
+    print("First tide events:")
 
     for tide in tides[:8]:
+
         print(
             tide["type"],
             tide["time"],
