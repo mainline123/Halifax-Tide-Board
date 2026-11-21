@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Halifax Tide Board</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        linear-gradient(
+            rgba(3, 22, 38, 0.78),
+            rgba(3, 22, 38, 0.94)
+        ),
+        linear-gradient(
+            180deg,
+            #0b5d7a 0%,
+            #073b55 45%,
+            #031c2d 100%
+        );
+    color: white;
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vw 3vh;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.location {
+    font-size: clamp(18px, 2.2vh, 28px);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #a8dff0;
+    margin-bottom: 1vh;
+}
+
+h1 {
+    font-size: clamp(50px, 7vh, 90px);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    margin-top: 1.2vh;
+    font-size: clamp(19px, 2.4vh, 30px);
+    color: #cdebf5;
+}
+
+/* NEXT TIDE */
+
+.next-section {
+    margin-top: 4vh;
+    text-align: center;
+    padding: 3vh 3vw;
+    border-radius: 28px;
+    background: rgba(255,255,255,0.10);
+    border: 2px solid rgba(255,255,255,0.16);
+}
+
+.next-label {
+    font-size: clamp(22px, 2.8vh, 34px);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #9ddff4;
+}
+
+.next-type {
+    margin-top: 1vh;
+    font-size: clamp(42px, 6vh, 72px);
+    font-weight: 700;
+}
+
+.next-time {
+    margin-top: 1vh;
+    font-size: clamp(66px, 9vh, 110px);
+    font-weight: 800;
+    line-height: 1;
+}
+
+.next-height {
+    margin-top: 1.5vh;
+    font-size: clamp(25px, 3.3vh, 40px);
+    color: #d9f3fb;
+}
+
+/* UPCOMING */
+
+.upcoming-title {
+    margin-top: 4vh;
+    margin-bottom: 1.5vh;
+    font-size: clamp(24px, 3vh, 38px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tides {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+    flex: 1;
+}
+
+.tide-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1.4fr 1fr;
+    align-items: center;
+    padding: 1.7vh 3vw;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.tide-type {
+    font-size: clamp(24px, 3.2vh, 38px);
+    font-weight: 700;
+}
+
+.tide-time {
+    text-align: center;
+    font-size: clamp(27px, 3.6vh, 44px);
+    font-weight: 700;
+}
+
+.tide-height {
+    text-align: right;
+    font-size: clamp(21px, 2.8vh, 34px);
+    color: #bfe7f4;
+}
+
+/* FOOTER */
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: clamp(15px, 1.8vh, 22px);
+    color: #8fc3d5;
+}
+
+.status {
+    margin-top: 0.5vh;
+}
+
+/* ERROR */
+
+.error {
+    text-align: center;
+    font-size: 28px;
+    padding: 40px;
+    color: #ffd6d6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="board">
+
+    <header class="header">
+        <div class="location">Halifax • Nova Scotia</div>
+        <h1>HALIFAX TIDES</h1>
+        <div class="subtitle">Today's High & Low Tides</div>
+    </header>
+
+    <section class="next-section">
+        <div class="next-label">Next Tide</div>
+
+        <div id="nextType" class="next-type">
+            Loading…
+        </div>
+
+        <div id="nextTime" class="next-time">
+            --:--
+        </div>
+
+        <div id="nextHeight" class="next-height">
+            --
+        </div>
+    </section>
+
+    <div class="upcoming-title">
+        Upcoming Tides
+    </div>
+
+    <div id="tideList" class="tides"></div>
+
+    <footer class="footer">
+        Tide information for Halifax, Nova Scotia
+        <div id="status" class="status">
+            Updating…
+        </div>
+    </footer>
+
+</div>
+
+
+<script>
+
+const DATA_FILE = "tides.json";
+
+function formatTime(value) {
+
+    if (!value) return "--";
+
+    return value
+        .replace("am", " AM")
+        .replace("pm", " PM")
+        .toUpperCase();
+}
+
+
+function timeToMinutes(value) {
+
+    const match = value.match(
+        /(\d{1,2}):(\d{2})(am|pm)/i
+    );
+
+    if (!match) return null;
+
+    let hour = parseInt(match[1]);
+    const minute = parseInt(match[2]);
+    const period = match[3].toLowerCase();
+
+    if (period === "pm" && hour !== 12) {
+        hour += 12;
+    }
+
+    if (period === "am" && hour === 12) {
+        hour = 0;
+    }
+
+    return hour * 60 + minute;
+}
+
+
+function findNextTide(tides) {
+
+    const now = new Date();
+
+    const currentMinutes =
+        now.getHours() * 60 +
+        now.getMinutes();
+
+    for (const tide of tides) {
+
+        const tideMinutes =
+            timeToMinutes(tide.time);
+
+        if (
+            tideMinutes !== null &&
+            tideMinutes >= currentMinutes
+        ) {
+            return tide;
+        }
+    }
+
+    return tides[0];
+}
+
+
+function displayTides(data) {
+
+    const tides = data.tides || [];
+
+    if (!tides.length) {
+        throw new Error(
+            "No tide information available."
+        );
+    }
+
+    const next =
+        findNextTide(tides);
+
+    document.getElementById(
+        "nextType"
+    ).textContent =
+        next.type + " Tide";
+
+    document.getElementById(
+        "nextTime"
+    ).textContent =
+        formatTime(next.time);
+
+    document.getElementById(
+        "nextHeight"
+    ).textContent =
+        next.height_m.toFixed(2) +
+        " metres";
+
+    const nextIndex =
+        tides.indexOf(next);
+
+    let upcoming =
+        tides.slice(
+            nextIndex + 1,
+            nextIndex + 6
+        );
+
+    if (upcoming.length < 5) {
+
+        upcoming = upcoming.concat(
+            tides.slice(
+                0,
+                5 - upcoming.length
+            )
+        );
+    }
+
+    const list =
+        document.getElementById(
+            "tideList"
+        );
+
+    list.innerHTML = "";
+
+    upcoming.forEach(tide => {
+
+        const row =
+            document.createElement("div");
+
+        row.className = "tide-row";
+
+        row.innerHTML = `
+            <div class="tide-type">
+                ${tide.type}
+            </div>
+
+            <div class="tide-time">
+                ${formatTime(tide.time)}
+            </div>
+
+            <div class="tide-height">
+                ${tide.height_m.toFixed(2)} m
+            </div>
+        `;
+
+        list.appendChild(row);
+    });
+
+    const updated =
+        new Date(
+            data.updated_utc
+        );
+
+    document.getElementById(
+        "status"
+    ).textContent =
+        "Last data update: " +
+        updated.toLocaleTimeString(
+            [],
+            {
+                hour: "numeric",
+                minute: "2-digit"
+            }
+        );
+}
+
+
+async function loadTides() {
+
+    try {
+
+        const response =
+            await fetch(
+                DATA_FILE +
+                "?v=" +
+                Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+        if (!response.ok) {
+            throw new Error(
+                "Unable to load tide data."
+            );
+        }
+
+        const data =
+            await response.json();
+
+        displayTides(data);
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        document.getElementById(
+            "status"
+        ).textContent =
+            "Tide data temporarily unavailable";
+    }
+}
+
+
+loadTides();
+
+/* Refresh data every 5 minutes */
+
+setInterval(
+    loadTides,
+    5 * 60 * 1000
+);
+
+</script>
+
+</body>
+</html>
