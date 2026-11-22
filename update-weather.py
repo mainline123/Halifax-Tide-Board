@@ -4,8 +4,6 @@ from datetime import datetime, timezone
 
 OUTPUT_FILE = "weather.json"
 
-# Environment and Climate Change Canada
-# Halifax/Dartmouth area
 API_URL = (
     "https://api.weather.gc.ca/collections/"
     "citypageweather-realtime/items"
@@ -35,27 +33,93 @@ def download_weather():
         )
 
 
+def get_english(value):
+
+    if isinstance(value, dict):
+        return value.get("en", "")
+
+    return value or ""
+
+
 def find_halifax(data):
 
     features = data.get("features", [])
 
-    # Look for Halifax first,
-    # then Dartmouth if Halifax isn't returned.
-    for target in ["Halifax", "Dartmouth"]:
+    # FIRST CHOICE:
+    # Exact Halifax city record.
+    for feature in features:
 
-        for feature in features:
+        properties = feature.get(
+            "properties",
+            {}
+        )
 
-            properties = feature.get(
-                "properties",
-                {}
+        name = get_english(
+            properties.get("name")
+        ).strip()
+
+        if name.lower() == "halifax":
+            print(
+                "Exact Halifax record found."
             )
+            return feature
 
-            text = json.dumps(
-                properties
-            ).lower()
+    # SECOND CHOICE:
+    # Exact Dartmouth city record.
+    for feature in features:
 
-            if target.lower() in text:
-                return feature
+        properties = feature.get(
+            "properties",
+            {}
+        )
+
+        name = get_english(
+            properties.get("name")
+        ).strip()
+
+        if name.lower() == "dartmouth":
+            print(
+                "Exact Dartmouth record found."
+            )
+            return feature
+
+    # Diagnostic output if neither exists.
+    print(
+        "Exact Halifax/Dartmouth record "
+        "was not found."
+    )
+
+    print(
+        "Possible Halifax-area records:"
+    )
+
+    for feature in features:
+
+        properties = feature.get(
+            "properties",
+            {}
+        )
+
+        name = get_english(
+            properties.get("name")
+        )
+
+        region = get_english(
+            properties.get("region")
+        )
+
+        combined = (
+            str(name) + " " + str(region)
+        ).lower()
+
+        if (
+            "halifax" in combined
+            or "dartmouth" in combined
+        ):
+            print(
+                f"NAME: {name} | "
+                f"REGION: {region}"
+            )
 
     return None
 
@@ -80,8 +144,8 @@ def main():
     if feature is None:
 
         raise RuntimeError(
-            "Halifax/Dartmouth weather "
-            "record was not found."
+            "An exact Halifax or Dartmouth "
+            "weather record was not found."
         )
 
     properties = feature.get(
@@ -89,9 +153,31 @@ def main():
         {}
     )
 
+    selected_name = get_english(
+        properties.get("name")
+    )
+
+    selected_region = get_english(
+        properties.get("region")
+    )
+
+    print(
+        f"Selected location: {selected_name}"
+    )
+
+    print(
+        f"Selected region: {selected_region}"
+    )
+
     output = {
         "location":
             "Halifax–Dartmouth",
+
+        "weather_location":
+            selected_name,
+
+        "weather_region":
+            selected_region,
 
         "source":
             "Environment and Climate "
@@ -123,17 +209,6 @@ def main():
         "SUCCESS: Halifax/Dartmouth "
         "weather saved to weather.json"
     )
-
-    print(
-        "Weather fields received:"
-    )
-
-    for key, value in properties.items():
-
-        if value is not None:
-            print(
-                f"{key}: {value}"
-            )
 
 
 if __name__ == "__main__":
