@@ -1,25 +1,29 @@
 {
   "location": "Halifax–Dartmouth",
+  "weather_location": "Halifax",
+  "weather_region": "Halifax Metro and Halifax County West",
   "source": "Environment and Climate Change Canada",
-  "updated_utc": "2026-11-22T04:39:05.436255+00:00",
+  "updated_utc": "2026-11-22T04:41:51.806694+00:00",
   "weather": {
-    "lastUpdated": "2026-11-22T04:00:35Z",
-    "identifier": "ns-36",
+    "lastUpdated": "2026-11-22T04:03:53Z",
+    "identifier": "ns-19",
     "name": {
-      "en": "Beaver Island",
-      "fr": "Beaver Island"
+      "en": "Halifax",
+      "fr": "Halifax"
     },
     "region": {
-      "en": "Halifax County - east of Porters Lake",
-      "fr": "comté d'Halifax - à l'est du lac Porters"
+      "en": "Halifax Metro and Halifax County West",
+      "fr": "ville d'Halifax et l'ouest du comté d'Halifax"
     },
     "url": {
-      "en": "https://weather.gc.ca/en/location/index.html?coords=44.82,-62.56",
-      "fr": "https://meteo.gc.ca/fr/location/index.html?coords=44.82,-62.56"
+      "en": "https://weather.gc.ca/en/location/index.html?coords=44.65,-63.6",
+      "fr": "https://meteo.gc.ca/fr/location/index.html?coords=44.65,-63.6"
     },
     "currentConditions": {
       "iconCode": {
-        "format": "gif"
+        "format": "gif",
+        "value": 30,
+        "url": "https://weather.gc.ca/weathericons/30.gif"
       },
       "timestamp": {
         "en": "2026-11-22T04:00:00Z",
@@ -35,8 +39,8 @@
           "fr": 100
         },
         "value": {
-          "en": 94,
-          "fr": 94
+          "en": 100,
+          "fr": 100
         }
       },
       "wind": {
@@ -54,8 +58,8 @@
             "fr": 100
           },
           "value": {
-            "en": 23,
-            "fr": 23
+            "en": 13,
+            "fr": 13
           }
         },
         "gust": {
@@ -72,8 +76,8 @@
             "fr": 100
           },
           "value": {
-            "en": 42,
-            "fr": 42
+            "en": 27,
+            "fr": 27
           }
         },
         "direction": {
@@ -82,8 +86,8 @@
             "fr": 100
           },
           "value": {
-            "en": "SW",
-            "fr": "SO"
+            "en": "SSW",
+            "fr": "SSO"
           }
         },
         "bearing": {
@@ -96,8 +100,8 @@
             "fr": 100
           },
           "value": {
-            "en": 219.0,
-            "fr": 219.0
+            "en": 209.0,
+            "fr": 209.0
           }
         }
       },
@@ -111,16 +115,20 @@
           "fr": "kPa"
         },
         "change": {
-          "en": 0.08,
-          "fr": 0.08
+          "en": 0.04,
+          "fr": 0.04
         },
         "tendency": {
           "en": "falling",
           "fr": "à la baisse"
         },
+        "qaValue": {
+          "en": 100,
+          "fr": 100
+        },
         "value": {
-          "en": 102.6,
-          "fr": 102.6
+          "en": 102.7,
+          "fr": 102.7
         }
       },
       "temperature": {
@@ -137,8 +145,8 @@
           "fr": 100
         },
         "value": {
-          "en": 8.9,
-          "fr": 8.9
+          "en": 5.1,
+          "fr": 5.1
         }
       },
       "dewpoint": {
@@ -150,28 +158,36 @@
           "en": "C",
           "fr": "C"
         },
+        "qaValue": {
+          "en": 100,
+          "fr": 100
+        },
         "value": {
-          "en": 7.9,
-          "fr": 7.9
+          "en": 5.1,
+          "fr": 5.1
         }
       },
       "station": {
         "code": {
-          "en": "wbv",
-          "fr": "wbv"
+          "en": "yhz",
+          "fr": "yhz"
         },
         "lat": {
-          "en": "44.82N",
-          "fr": "44.82N"
+          "en": "44.88N",
+          "fr": "44.88N"
         },
         "lon": {
-          "en": "62.34W",
-          "fr": "62.34O"
+          "en": "63.51W",
+          "fr": "63.51O"
         },
         "value": {
-          "en": "Beaver Island",
-          "fr": "Beaver Island"
+          "en": "Halifax Stanfield Int'l Airport",
+          "fr": "Aéroport int. Stanfield de Halifax"
         }
+      },
+      "condition": {
+        "en": "Clear",
+        "fr": "Dégagé"
       },
       "windChill": {
         "unitType": {
@@ -179,8 +195,8 @@
           "fr": "metric"
         },
         "value": {
-          "en": -3,
-          "fr": -3
+          "en": -5,
+          "fr": -5
         },
         "qaValue": {
           "en": 100,
@@ -752,8 +768,8 @@
             "precipPeriods": [
               {
                 "start": {
-                  "en": 61,
-                  "fr": 61
+                  "en": 58,
+                  "fr": 58
                 },
                 "end": {
                   "en": 70,
@@ -792,14 +808,14 @@
                   "fr": "high"
                 },
                 "value": {
-                  "en": 13,
-                  "fr": 13
+                  "en": 15,
+                  "fr": 15
                 }
               }
             ],
             "textSummary": {
-              "en": "High 13.",
-              "fr": "Maximum 13."
+              "en": "High 15.",
+              "fr": "Maximum 15."
             }
           },
           "winds": {
@@ -811,8 +827,8 @@
                     "fr": "degrees"
                   },
                   "value": {
-                    "en": 18,
-                    "fr": 18
+                    "en": 22,
+                    "fr": 22
                   }
                 },
                 "index": {
@@ -852,8 +868,8 @@
                   }
                 },
                 "direction": {
-                  "en": "S",
-                  "fr": "S"
+                  "en": "SW",
+                  "fr": "SO"
                 }
               },
               {
@@ -885,8 +901,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 30,
-                    "fr": 30
+                    "en": 40,
+                    "fr": 40
                   }
                 },
                 "gust": {
@@ -899,8 +915,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 0,
-                    "fr": 0
+                    "en": 60,
+                    "fr": 60
                   }
                 },
                 "direction": {
@@ -937,8 +953,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 50,
-                    "fr": 50
+                    "en": 20,
+                    "fr": 20
                   }
                 },
                 "gust": {
@@ -951,13 +967,65 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 70,
-                    "fr": 70
+                    "en": 40,
+                    "fr": 40
                   }
                 },
                 "direction": {
                   "en": "S",
                   "fr": "S"
+                }
+              },
+              {
+                "bearing": {
+                  "units": {
+                    "en": "degrees",
+                    "fr": "degrees"
+                  },
+                  "value": {
+                    "en": 22,
+                    "fr": 22
+                  }
+                },
+                "index": {
+                  "en": 4,
+                  "fr": 4
+                },
+                "rank": {
+                  "en": "minor",
+                  "fr": "minor"
+                },
+                "speed": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 20,
+                    "fr": 20
+                  }
+                },
+                "gust": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 0,
+                    "fr": 0
+                  }
+                },
+                "direction": {
+                  "en": "SW",
+                  "fr": "SO"
                 }
               }
             ],
@@ -976,8 +1044,8 @@
               "fr": "%"
             },
             "value": {
-              "en": 100,
-              "fr": 100
+              "en": 95,
+              "fr": 95
             }
           },
           "abbreviatedForecast": {
@@ -992,8 +1060,8 @@
             }
           },
           "textSummary": {
-            "en": "Rain. Windy. High 13.",
-            "fr": "Pluie. Venteux. Maximum 13."
+            "en": "Rain. Windy. High 15.",
+            "fr": "Pluie. Venteux. Maximum 15."
           }
         },
         {
@@ -1041,30 +1109,21 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": 10,
-                  "fr": 10
+                  "en": 4,
+                  "fr": 4
                 }
               }
             ],
             "textSummary": {
-              "en": "Low 10.",
-              "fr": "Minimum 10."
+              "en": "Low plus 4.",
+              "fr": "Minimum plus 4."
             }
           },
           "cloudPrecip": {
             "en": "Showers.",
             "fr": "Averses."
           },
-          "relativeHumidity": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "value": {
-              "en": 95,
-              "fr": 95
-            }
-          },
+          "relativeHumidity": {},
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
@@ -1077,8 +1136,8 @@
             }
           },
           "textSummary": {
-            "en": "Showers. Low 10.",
-            "fr": "Averses. Minimum 10."
+            "en": "Showers. Low plus 4.",
+            "fr": "Averses. Minimum plus 4."
           }
         },
         {
@@ -1108,19 +1167,19 @@
                   "fr": "high"
                 },
                 "value": {
-                  "en": 11,
-                  "fr": 11
+                  "en": 5,
+                  "fr": 5
                 }
               }
             ],
             "textSummary": {
-              "en": "High 11.",
-              "fr": "Maximum 11."
+              "en": "High plus 5.",
+              "fr": "Maximum plus 5."
             }
           },
           "cloudPrecip": {
-            "en": "A mix of sun and cloud.",
-            "fr": "Alternance de soleil et de nuages."
+            "en": "Sunny.",
+            "fr": "Ensoleillé."
           },
           "relativeHumidity": {
             "units": {
@@ -1128,24 +1187,24 @@
               "fr": "%"
             },
             "value": {
-              "en": 70,
-              "fr": 70
+              "en": 75,
+              "fr": 75
             }
           },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
-              "value": 2,
-              "url": "https://weather.gc.ca/weathericons/02.gif"
+              "value": 0,
+              "url": "https://weather.gc.ca/weathericons/00.gif"
             },
             "textSummary": {
-              "en": "A mix of sun and cloud",
-              "fr": "Alternance de soleil et de nuages"
+              "en": "Sunny",
+              "fr": "Ensoleillé"
             }
           },
           "textSummary": {
-            "en": "A mix of sun and cloud. High 11.",
-            "fr": "Alternance de soleil et de nuages. Maximum 11."
+            "en": "Sunny. High plus 5.",
+            "fr": "Ensoleillé. Maximum plus 5."
           }
         },
         {
@@ -1175,19 +1234,19 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": -3,
-                  "fr": -3
+                  "en": -4,
+                  "fr": -4
                 }
               }
             ],
             "textSummary": {
-              "en": "Low minus 3.",
-              "fr": "Minimum moins 3."
+              "en": "Low minus 4.",
+              "fr": "Minimum moins 4."
             }
           },
           "cloudPrecip": {
-            "en": "Cloudy periods.",
-            "fr": "Passages nuageux."
+            "en": "Clear.",
+            "fr": "Dégagé."
           },
           "relativeHumidity": {
             "units": {
@@ -1195,24 +1254,24 @@
               "fr": "%"
             },
             "value": {
-              "en": 65,
-              "fr": 65
+              "en": 75,
+              "fr": 75
             }
           },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
-              "value": 32,
-              "url": "https://weather.gc.ca/weathericons/32.gif"
+              "value": 30,
+              "url": "https://weather.gc.ca/weathericons/30.gif"
             },
             "textSummary": {
-              "en": "Cloudy periods",
-              "fr": "Passages nuageux"
+              "en": "Clear",
+              "fr": "Dégagé"
             }
           },
           "textSummary": {
-            "en": "Cloudy periods. Low minus 3.",
-            "fr": "Passages nuageux. Minimum moins 3."
+            "en": "Clear. Low minus 4.",
+            "fr": "Dégagé. Minimum moins 4."
           }
         },
         {
@@ -1242,19 +1301,19 @@
                   "fr": "high"
                 },
                 "value": {
-                  "en": 1,
-                  "fr": 1
+                  "en": 2,
+                  "fr": 2
                 }
               }
             ],
             "textSummary": {
-              "en": "High plus 1.",
-              "fr": "Maximum plus 1."
+              "en": "High plus 2.",
+              "fr": "Maximum plus 2."
             }
           },
           "cloudPrecip": {
-            "en": "A mix of sun and cloud.",
-            "fr": "Alternance de soleil et de nuages."
+            "en": "Sunny.",
+            "fr": "Ensoleillé."
           },
           "relativeHumidity": {
             "units": {
@@ -1262,24 +1321,24 @@
               "fr": "%"
             },
             "value": {
-              "en": 65,
-              "fr": 65
+              "en": 60,
+              "fr": 60
             }
           },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
-              "value": 2,
-              "url": "https://weather.gc.ca/weathericons/02.gif"
+              "value": 0,
+              "url": "https://weather.gc.ca/weathericons/00.gif"
             },
             "textSummary": {
-              "en": "A mix of sun and cloud",
-              "fr": "Alternance de soleil et de nuages"
+              "en": "Sunny",
+              "fr": "Ensoleillé"
             }
           },
           "textSummary": {
-            "en": "A mix of sun and cloud. High plus 1.",
-            "fr": "Alternance de soleil et de nuages. Maximum plus 1."
+            "en": "Sunny. High plus 2.",
+            "fr": "Ensoleillé. Maximum plus 2."
           }
         },
         {
@@ -1309,19 +1368,19 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": -2,
-                  "fr": -2
+                  "en": -6,
+                  "fr": -6
                 }
               }
             ],
             "textSummary": {
-              "en": "Low minus 2.",
-              "fr": "Minimum moins 2."
+              "en": "Low minus 6.",
+              "fr": "Minimum moins 6."
             }
           },
           "cloudPrecip": {
-            "en": "Cloudy periods.",
-            "fr": "Passages nuageux."
+            "en": "Clear.",
+            "fr": "Dégagé."
           },
           "relativeHumidity": {
             "units": {
@@ -1329,24 +1388,24 @@
               "fr": "%"
             },
             "value": {
-              "en": 75,
-              "fr": 75
+              "en": 100,
+              "fr": 100
             }
           },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
-              "value": 32,
-              "url": "https://weather.gc.ca/weathericons/32.gif"
+              "value": 30,
+              "url": "https://weather.gc.ca/weathericons/30.gif"
             },
             "textSummary": {
-              "en": "Cloudy periods",
-              "fr": "Passages nuageux"
+              "en": "Clear",
+              "fr": "Dégagé"
             }
           },
           "textSummary": {
-            "en": "Cloudy periods. Low minus 2.",
-            "fr": "Passages nuageux. Minimum moins 2."
+            "en": "Clear. Low minus 6.",
+            "fr": "Dégagé. Minimum moins 6."
           }
         },
         {
@@ -1376,14 +1435,14 @@
                   "fr": "high"
                 },
                 "value": {
-                  "en": 4,
-                  "fr": 4
+                  "en": 5,
+                  "fr": 5
                 }
               }
             ],
             "textSummary": {
-              "en": "High plus 4.",
-              "fr": "Maximum plus 4."
+              "en": "High plus 5.",
+              "fr": "Maximum plus 5."
             }
           },
           "cloudPrecip": {
@@ -1412,8 +1471,8 @@
             }
           },
           "textSummary": {
-            "en": "A mix of sun and cloud. High plus 4.",
-            "fr": "Alternance de soleil et de nuages. Maximum plus 4."
+            "en": "A mix of sun and cloud. High plus 5.",
+            "fr": "Alternance de soleil et de nuages. Maximum plus 5."
           }
         },
         {
@@ -1461,19 +1520,19 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": 2,
-                  "fr": 2
+                  "en": 1,
+                  "fr": 1
                 }
               }
             ],
             "textSummary": {
-              "en": "Low plus 2.",
-              "fr": "Minimum plus 2."
+              "en": "Low plus 1.",
+              "fr": "Minimum plus 1."
             }
           },
           "cloudPrecip": {
-            "en": "Cloudy with 60 percent chance of showers.",
-            "fr": "Nuageux avec 60 pour cent de probabilité d'averses."
+            "en": "Showers.",
+            "fr": "Averses."
           },
           "relativeHumidity": {
             "units": {
@@ -1481,8 +1540,8 @@
               "fr": "%"
             },
             "value": {
-              "en": 80,
-              "fr": 80
+              "en": 100,
+              "fr": 100
             }
           },
           "abbreviatedForecast": {
@@ -1492,13 +1551,13 @@
               "url": "https://weather.gc.ca/weathericons/12.gif"
             },
             "textSummary": {
-              "en": "Chance of showers",
-              "fr": "Possibilité d'averses"
+              "en": "Showers",
+              "fr": "Averses"
             }
           },
           "textSummary": {
-            "en": "Cloudy with 60 percent chance of showers. Low plus 2.",
-            "fr": "Nuageux avec 60 pour cent de probabilité d'averses. Minimum plus 2."
+            "en": "Showers. Low plus 1.",
+            "fr": "Averses. Minimum plus 1."
           }
         },
         {
@@ -1557,8 +1616,8 @@
             }
           },
           "cloudPrecip": {
-            "en": "Cloudy with 60 percent chance of showers.",
-            "fr": "Nuageux avec 60 pour cent de probabilité d'averses."
+            "en": "Showers.",
+            "fr": "Averses."
           },
           "relativeHumidity": {
             "units": {
@@ -1577,13 +1636,13 @@
               "url": "https://weather.gc.ca/weathericons/12.gif"
             },
             "textSummary": {
-              "en": "Chance of showers",
-              "fr": "Possibilité d'averses"
+              "en": "Showers",
+              "fr": "Averses"
             }
           },
           "textSummary": {
-            "en": "Cloudy with 60 percent chance of showers. High 6.",
-            "fr": "Nuageux avec 60 pour cent de probabilité d'averses. Maximum 6."
+            "en": "Showers. High 6.",
+            "fr": "Averses. Maximum 6."
           }
         }
       ]
@@ -3215,12 +3274,12 @@
         "fr": "Les heures de lever et coucher du soleil sont une estimation seulement et peuvent être différentes des heures officielles de lever et coucher du soleil disponibles ici ( http://hia-iha.nrc-cnrc.gc.ca/sunrise_f.html )"
       },
       "sunrise": {
-        "en": "2026-11-22T11:16:00Z",
-        "fr": "2026-11-22T11:16:00Z"
+        "en": "2026-11-22T11:20:00Z",
+        "fr": "2026-11-22T11:20:00Z"
       },
       "sunset": {
-        "en": "2026-11-22T20:36:00Z",
-        "fr": "2026-11-22T20:36:00Z"
+        "en": "2026-11-22T20:41:00Z",
+        "fr": "2026-11-22T20:41:00Z"
       }
     }
   }
