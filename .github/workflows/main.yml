@@ -1,4 +1,4 @@
-name: Update Halifax Tide Board
+name: Update Halifax Tide and Weather Board
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-tides:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,14 +24,17 @@ jobs:
       - name: Update tide data
         run: python update-tides.py
 
-      - name: Commit updated tide data
+      - name: Update Halifax weather data
+        run: python update-weather.py
+
+      - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tides.json
+          git add tides.json weather.json
           if git diff --cached --quiet; then
-            echo "No tide changes to commit"
+            echo "No data changes to commit"
           else
-            git commit -m "Update Halifax tide data"
+            git commit -m "Update Halifax tide and weather data"
             git push
           fi
