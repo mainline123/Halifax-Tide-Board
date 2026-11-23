@@ -3,9 +3,9 @@
   "weather_location": "Halifax",
   "weather_region": "Halifax Metro and Halifax County West",
   "source": "Environment and Climate Change Canada",
-  "updated_utc": "2026-11-22T19:37:31.443904+00:00",
+  "updated_utc": "2026-11-23T07:35:38.840801+00:00",
   "weather": {
-    "lastUpdated": "2026-11-22T19:07:21Z",
+    "lastUpdated": "2026-11-23T07:15:55Z",
     "identifier": "ns-19",
     "name": {
       "en": "Halifax",
@@ -22,12 +22,12 @@
     "currentConditions": {
       "iconCode": {
         "format": "gif",
-        "value": 10,
-        "url": "https://weather.gc.ca/weathericons/10.gif"
+        "value": 33,
+        "url": "https://weather.gc.ca/weathericons/33.gif"
       },
       "timestamp": {
-        "en": "2026-11-22T19:00:00Z",
-        "fr": "2026-11-22T19:00:00Z"
+        "en": "2026-11-23T07:00:00Z",
+        "fr": "2026-11-23T07:00:00Z"
       },
       "relativeHumidity": {
         "units": {
@@ -39,8 +39,8 @@
           "fr": 100
         },
         "value": {
-          "en": 79,
-          "fr": 79
+          "en": 100,
+          "fr": 100
         }
       },
       "wind": {
@@ -58,8 +58,8 @@
             "fr": 100
           },
           "value": {
-            "en": 17,
-            "fr": 17
+            "en": 14,
+            "fr": 14
           }
         },
         "gust": {
@@ -86,8 +86,8 @@
             "fr": 100
           },
           "value": {
-            "en": "SSW",
-            "fr": "SSO"
+            "en": "SE",
+            "fr": "SE"
           }
         },
         "bearing": {
@@ -100,8 +100,8 @@
             "fr": 100
           },
           "value": {
-            "en": 196.0,
-            "fr": 196.0
+            "en": 132.0,
+            "fr": 132.0
           }
         }
       },
@@ -114,21 +114,21 @@
           "en": "kPa",
           "fr": "kPa"
         },
+        "change": {
+          "en": 0.31,
+          "fr": 0.31
+        },
+        "tendency": {
+          "en": "falling",
+          "fr": "à la baisse"
+        },
         "qaValue": {
           "en": 100,
           "fr": 100
         },
         "value": {
-          "en": 102.4,
-          "fr": 102.4
-        },
-        "tendency": {
-          "fr": "à la baisse",
-          "en": "falling"
-        },
-        "change": {
-          "fr": 0.12,
-          "en": 0.12
+          "en": 101.7,
+          "fr": 101.7
         }
       },
       "temperature": {
@@ -145,8 +145,8 @@
           "fr": 100
         },
         "value": {
-          "en": 11.6,
-          "fr": 11.6
+          "en": 8.5,
+          "fr": 8.5
         }
       },
       "dewpoint": {
@@ -163,8 +163,8 @@
           "fr": 100
         },
         "value": {
-          "en": 8.0,
-          "fr": 8.0
+          "en": 8.5,
+          "fr": 8.5
         }
       },
       "station": {
@@ -186,8 +186,8 @@
         }
       },
       "condition": {
-        "fr": "Nuageux",
-        "en": "Cloudy"
+        "en": "Mostly Cloudy",
+        "fr": "Généralement nuageux"
       },
       "windChill": {
         "unitType": {
@@ -206,8 +206,8 @@
     },
     "forecastGroup": {
       "timestamp": {
-        "en": "2026-11-22T15:00:00Z",
-        "fr": "2026-11-22T15:00:00Z"
+        "en": "2026-11-22T20:00:00Z",
+        "fr": "2026-11-22T20:00:00Z"
       },
       "regionalNormals": {
         "textSummary": {
@@ -255,165 +255,6 @@
       },
       "forecasts": [
         {
-          "uv": {
-            "index": {
-              "en": "2",
-              "fr": "2"
-            },
-            "category": {
-              "en": "low",
-              "fr": "bas"
-            },
-            "textSummary": {
-              "en": "UV index 2 or low.",
-              "fr": "Indice UV de 2 ou bas."
-            }
-          },
-          "period": {
-            "textForecastName": {
-              "en": "Today",
-              "fr": "Aujourd'hui"
-            },
-            "value": {
-              "en": "Sunday",
-              "fr": "dimanche"
-            }
-          },
-          "temperatures": {
-            "temperature": [
-              {
-                "unitType": {
-                  "en": "metric",
-                  "fr": "metric"
-                },
-                "units": {
-                  "en": "C",
-                  "fr": "C"
-                },
-                "class": {
-                  "en": "high",
-                  "fr": "high"
-                },
-                "value": {
-                  "en": 13,
-                  "fr": 13
-                }
-              }
-            ],
-            "textSummary": {
-              "en": "High 13.",
-              "fr": "Maximum 13."
-            }
-          },
-          "winds": {
-            "periods": [
-              {
-                "bearing": {
-                  "units": {
-                    "en": "degrees",
-                    "fr": "degrees"
-                  },
-                  "value": {
-                    "en": 22,
-                    "fr": 22
-                  }
-                },
-                "index": {
-                  "en": 1,
-                  "fr": 1
-                },
-                "rank": {
-                  "en": "major",
-                  "fr": "major"
-                },
-                "speed": {
-                  "unitType": {
-                    "en": "metric",
-                    "fr": "metric"
-                  },
-                  "units": {
-                    "en": "km/h",
-                    "fr": "km/h"
-                  },
-                  "value": {
-                    "en": 20,
-                    "fr": 20
-                  }
-                },
-                "gust": {
-                  "unitType": {
-                    "en": "metric",
-                    "fr": "metric"
-                  },
-                  "units": {
-                    "en": "km/h",
-                    "fr": "km/h"
-                  },
-                  "value": {
-                    "en": 0,
-                    "fr": 0
-                  }
-                },
-                "direction": {
-                  "en": "SW",
-                  "fr": "SO"
-                }
-              }
-            ],
-            "textSummary": {
-              "en": "Wind southwest 20 km/h.",
-              "fr": "Vents du sud-ouest de 20 km/h."
-            }
-          },
-          "cloudPrecip": {
-            "en": "Increasing cloudiness.",
-            "fr": "Ennuagement."
-          },
-          "relativeHumidity": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "value": {
-              "en": 80,
-              "fr": 80
-            }
-          },
-          "abbreviatedForecast": {
-            "icon": {
-              "format": "gif",
-              "value": 4,
-              "url": "https://weather.gc.ca/weathericons/04.gif"
-            },
-            "textSummary": {
-              "en": "Increasing cloudiness",
-              "fr": "Ennuagement"
-            }
-          },
-          "textSummary": {
-            "en": "Increasing cloudiness. Wind southwest 20 km/h. High 13. UV index 2 or low.",
-            "fr": "Ennuagement. Vents du sud-ouest de 20 km/h. Maximum 13. Indice UV de 2 ou bas."
-          }
-        },
-        {
-          "precipitation": {
-            "precipPeriods": [
-              {
-                "start": {
-                  "en": 32,
-                  "fr": 32
-                },
-                "end": {
-                  "en": 34,
-                  "fr": 34
-                },
-                "value": {
-                  "en": "rain",
-                  "fr": "pluie"
-                }
-              }
-            ]
-          },
           "period": {
             "textForecastName": {
               "en": "Tonight",
@@ -440,14 +281,14 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": 11,
-                  "fr": 11
+                  "en": 10,
+                  "fr": 10
                 }
               }
             ],
             "textSummary": {
-              "en": "Low 11.",
-              "fr": "Minimum 11."
+              "en": "Low 10.",
+              "fr": "Minimum 10."
             }
           },
           "winds": {
@@ -511,8 +352,8 @@
                     "fr": "degrees"
                   },
                   "value": {
-                    "en": 18,
-                    "fr": 18
+                    "en": 99,
+                    "fr": 99
                   }
                 },
                 "index": {
@@ -533,8 +374,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 15,
-                    "fr": 15
+                    "en": 5,
+                    "fr": 5
                   }
                 },
                 "gust": {
@@ -552,8 +393,8 @@
                   }
                 },
                 "direction": {
-                  "en": "S",
-                  "fr": "S"
+                  "en": "VR",
+                  "fr": "VR"
                 }
               },
               {
@@ -599,8 +440,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 0,
-                    "fr": 0
+                    "en": 40,
+                    "fr": 40
                   }
                 },
                 "direction": {
@@ -610,13 +451,13 @@
               }
             ],
             "textSummary": {
-              "en": "Wind southwest 20 km/h becoming southeast 20 after midnight.",
-              "fr": "Vents du sud-ouest de 20 km/h devenant du sud-est à 20 après minuit."
+              "en": "Wind southwest 20 km/h becoming light early this evening. Wind becoming southeast 20 gusting to 40 before morning.",
+              "fr": "Vents du sud-ouest de 20 km/h devenant légers tôt ce soir. Vents devenant du sud-est à 20 avec rafales à 40 en fin de nuit."
             }
           },
           "cloudPrecip": {
-            "en": "Mainly cloudy. 60 percent chance of showers before morning.",
-            "fr": "Généralement nuageux. 60 pour cent de probabilité d'averses en fin de nuit."
+            "en": "Mainly cloudy.",
+            "fr": "Généralement nuageux."
           },
           "relativeHumidity": {
             "units": {
@@ -624,24 +465,24 @@
               "fr": "%"
             },
             "value": {
-              "en": 95,
-              "fr": 95
+              "en": 100,
+              "fr": 100
             }
           },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
-              "value": 36,
-              "url": "https://weather.gc.ca/weathericons/36.gif"
+              "value": 33,
+              "url": "https://weather.gc.ca/weathericons/33.gif"
             },
             "textSummary": {
-              "en": "Chance of showers",
-              "fr": "Possibilité d'averses"
+              "en": "Mainly cloudy",
+              "fr": "Généralement nuageux"
             }
           },
           "textSummary": {
-            "en": "Mainly cloudy. 60 percent chance of showers before morning. Wind southwest 20 km/h becoming southeast 20 after midnight. Low 11.",
-            "fr": "Généralement nuageux. 60 pour cent de probabilité d'averses en fin de nuit. Vents du sud-ouest de 20 km/h devenant du sud-est à 20 après minuit. Minimum 11."
+            "en": "Mainly cloudy. Wind southwest 20 km/h becoming light early this evening. Wind becoming southeast 20 gusting to 40 before morning. Low 10.",
+            "fr": "Généralement nuageux. Vents du sud-ouest de 20 km/h devenant légers tôt ce soir. Vents devenant du sud-est à 20 avec rafales à 40 en fin de nuit. Minimum 10."
           }
         },
         {
@@ -653,8 +494,8 @@
                   "fr": 34
                 },
                 "end": {
-                  "en": 46,
-                  "fr": 46
+                  "en": 45,
+                  "fr": 45
                 },
                 "value": {
                   "en": "rain",
@@ -673,8 +514,8 @@
                   "fr": "mm"
                 },
                 "value": {
-                  "en": 25,
-                  "fr": 25
+                  "en": 20,
+                  "fr": 20
                 }
               },
               "name": {
@@ -683,8 +524,8 @@
               }
             },
             "textSummary": {
-              "en": "Amount 20 to 30 mm except 40 mm in areas of heaviest rain.",
-              "fr": "Hauteur prévue de 20 à 30 mm sauf 40 mm dans les secteurs avec forte pluie."
+              "en": "Amount 15 to 25 mm except 40 mm in the heaviest showers.",
+              "fr": "Hauteur prévue de 15 à 25 mm sauf 40 mm dans les plus fortes averses."
             }
           },
           "period": {
@@ -713,21 +554,21 @@
                   "fr": "high"
                 },
                 "value": {
-                  "en": 15,
-                  "fr": 15
+                  "en": 16,
+                  "fr": 16
                 }
               }
             ],
             "textSummary": {
-              "en": "High 15.",
-              "fr": "Maximum 15."
+              "en": "High 16.",
+              "fr": "Maximum 16."
             }
           },
           "visibility": {
             "cause": "other",
             "textSummary": {
-              "en": "Fog patches developing in the morning.",
-              "fr": "Nappes de brouillard se formant le matin."
+              "en": "Fog patches dissipating late in the afternoon.",
+              "fr": "Nappes de brouillard se dissipant tard en après-midi."
             }
           },
           "winds": {
@@ -748,8 +589,8 @@
                   "fr": 1
                 },
                 "rank": {
-                  "en": "minor",
-                  "fr": "minor"
+                  "en": "major",
+                  "fr": "major"
                 },
                 "speed": {
                   "unitType": {
@@ -775,8 +616,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 0,
-                    "fr": 0
+                    "en": 40,
+                    "fr": 40
                   }
                 },
                 "direction": {
@@ -813,60 +654,8 @@
                     "fr": "km/h"
                   },
                   "value": {
-                    "en": 30,
-                    "fr": 30
-                  }
-                },
-                "gust": {
-                  "unitType": {
-                    "en": "metric",
-                    "fr": "metric"
-                  },
-                  "units": {
-                    "en": "km/h",
-                    "fr": "km/h"
-                  },
-                  "value": {
-                    "en": 50,
-                    "fr": 50
-                  }
-                },
-                "direction": {
-                  "en": "S",
-                  "fr": "S"
-                }
-              },
-              {
-                "bearing": {
-                  "units": {
-                    "en": "degrees",
-                    "fr": "degrees"
-                  },
-                  "value": {
-                    "en": 18,
-                    "fr": 18
-                  }
-                },
-                "index": {
-                  "en": 3,
-                  "fr": 3
-                },
-                "rank": {
-                  "en": "major",
-                  "fr": "major"
-                },
-                "speed": {
-                  "unitType": {
-                    "en": "metric",
-                    "fr": "metric"
-                  },
-                  "units": {
-                    "en": "km/h",
-                    "fr": "km/h"
-                  },
-                  "value": {
-                    "en": 50,
-                    "fr": 50
+                    "en": 40,
+                    "fr": 40
                   }
                 },
                 "gust": {
@@ -887,16 +676,68 @@
                   "en": "S",
                   "fr": "S"
                 }
+              },
+              {
+                "bearing": {
+                  "units": {
+                    "en": "degrees",
+                    "fr": "degrees"
+                  },
+                  "value": {
+                    "en": 27,
+                    "fr": 27
+                  }
+                },
+                "index": {
+                  "en": 3,
+                  "fr": 3
+                },
+                "rank": {
+                  "en": "minor",
+                  "fr": "minor"
+                },
+                "speed": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 20,
+                    "fr": 20
+                  }
+                },
+                "gust": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 40,
+                    "fr": 40
+                  }
+                },
+                "direction": {
+                  "en": "W",
+                  "fr": "O"
+                }
               }
             ],
             "textSummary": {
-              "en": "Wind southeast 20 km/h becoming south 30 gusting to 50 then increasing to 50 gusting to 70 near noon.",
-              "fr": "Vents du sud-est de 20 km/h devenant du sud à 30 avec rafales à 50 puis augmentant à 50 avec rafales à 70 en mi-journée."
+              "en": "Wind southeast 20 km/h gusting to 40 becoming south 40 gusting to 70 in the morning.",
+              "fr": "Vents du sud-est de 20 km/h avec rafales à 40 devenant du sud à 40 avec rafales à 70 le matin."
             }
           },
           "cloudPrecip": {
-            "en": "Rain at times heavy.",
-            "fr": "Pluie parfois forte."
+            "en": "Rain at times heavy ending late in the afternoon then cloudy.",
+            "fr": "Pluie parfois forte cessant tard en après-midi. Nuageux par la suite."
           },
           "relativeHumidity": {
             "units": {
@@ -920,8 +761,8 @@
             }
           },
           "textSummary": {
-            "en": "Rain at times heavy. Fog patches developing in the morning. Amount 20 to 30 mm except 40 mm in areas of heaviest rain. Wind southeast 20 km/h becoming south 30 gusting to 50 then increasing to 50 gusting to 70 near noon. High 15.",
-            "fr": "Pluie parfois forte. Nappes de brouillard se formant le matin. Hauteur prévue de 20 à 30 mm sauf 40 mm dans les secteurs avec forte pluie. Vents du sud-est de 20 km/h devenant du sud à 30 avec rafales à 50 puis augmentant à 50 avec rafales à 70 en mi-journée. Maximum 15."
+            "en": "Rain at times heavy ending late in the afternoon then cloudy. Fog patches dissipating late in the afternoon. Amount 15 to 25 mm except 40 mm in the heaviest showers. Wind southeast 20 km/h gusting to 40 becoming south 40 gusting to 70 in the morning. High 16.",
+            "fr": "Pluie parfois forte cessant tard en après-midi. Nuageux par la suite. Nappes de brouillard se dissipant tard en après-midi. Hauteur prévue de 15 à 25 mm sauf 40 mm dans les plus fortes averses. Vents du sud-est de 20 km/h avec rafales à 40 devenant du sud à 40 avec rafales à 70 le matin. Maximum 16."
           }
         },
         {
@@ -951,21 +792,142 @@
                   "fr": "low"
                 },
                 "value": {
-                  "en": 4,
-                  "fr": 4
+                  "en": 5,
+                  "fr": 5
                 }
               }
             ],
             "textSummary": {
-              "en": "Low plus 4.",
-              "fr": "Minimum plus 4."
+              "en": "Low plus 5.",
+              "fr": "Minimum plus 5."
+            }
+          },
+          "winds": {
+            "periods": [
+              {
+                "bearing": {
+                  "units": {
+                    "en": "degrees",
+                    "fr": "degrees"
+                  },
+                  "value": {
+                    "en": 27,
+                    "fr": 27
+                  }
+                },
+                "index": {
+                  "en": 1,
+                  "fr": 1
+                },
+                "rank": {
+                  "en": "major",
+                  "fr": "major"
+                },
+                "speed": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 20,
+                    "fr": 20
+                  }
+                },
+                "gust": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 40,
+                    "fr": 40
+                  }
+                },
+                "direction": {
+                  "en": "W",
+                  "fr": "O"
+                }
+              },
+              {
+                "bearing": {
+                  "units": {
+                    "en": "degrees",
+                    "fr": "degrees"
+                  },
+                  "value": {
+                    "en": 99,
+                    "fr": 99
+                  }
+                },
+                "index": {
+                  "en": 2,
+                  "fr": 2
+                },
+                "rank": {
+                  "en": "major",
+                  "fr": "major"
+                },
+                "speed": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 5,
+                    "fr": 5
+                  }
+                },
+                "gust": {
+                  "unitType": {
+                    "en": "metric",
+                    "fr": "metric"
+                  },
+                  "units": {
+                    "en": "km/h",
+                    "fr": "km/h"
+                  },
+                  "value": {
+                    "en": 0,
+                    "fr": 0
+                  }
+                },
+                "direction": {
+                  "en": "VR",
+                  "fr": "VR"
+                }
+              }
+            ],
+            "textSummary": {
+              "en": "Wind west 20 km/h gusting to 40 becoming light in the evening.",
+              "fr": "Vents d'ouest de 20 km/h avec rafales à 40 devenant légers en soirée."
             }
           },
           "cloudPrecip": {
-            "en": "Cloudy periods.",
-            "fr": "Passages nuageux."
+            "en": "Mainly cloudy. Clearing before morning.",
+            "fr": "Généralement nuageux. Dégagement en fin de nuit."
           },
-          "relativeHumidity": {},
+          "relativeHumidity": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "value": {
+              "en": 100,
+              "fr": 100
+            }
+          },
           "abbreviatedForecast": {
             "icon": {
               "format": "gif",
@@ -973,13 +935,13 @@
               "url": "https://weather.gc.ca/weathericons/32.gif"
             },
             "textSummary": {
-              "en": "Cloudy periods",
-              "fr": "Passages nuageux"
+              "en": "Partly cloudy",
+              "fr": "Partiellement nuageux"
             }
           },
           "textSummary": {
-            "en": "Cloudy periods. Low plus 4.",
-            "fr": "Passages nuageux. Minimum plus 4."
+            "en": "Mainly cloudy. Clearing before morning. Wind west 20 km/h gusting to 40 becoming light in the evening. Low plus 5.",
+            "fr": "Généralement nuageux. Dégagement en fin de nuit. Vents d'ouest de 20 km/h avec rafales à 40 devenant légers en soirée. Minimum plus 5."
           }
         },
         {
@@ -1634,8 +1596,8 @@
     },
     "hourlyForecastGroup": {
       "timestamp": {
-        "en": "2026-11-22T15:00:00Z",
-        "fr": "2026-11-22T15:00:00Z"
+        "en": "2026-11-23T20:00:00Z",
+        "fr": "2026-11-23T20:00:00Z"
       },
       "hourlyForecasts": [
         {
@@ -1653,201 +1615,6 @@
               "fr": "C"
             },
             "value": {
-              "en": 12,
-              "fr": 12
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 3,
-            "url": "https://weather.gc.ca/weathericons/03.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-22T20:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 20,
-                "fr": 20
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "Southwest"
-              },
-              "value": {
-                "en": "SW",
-                "fr": "SO"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-22T21:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 20,
-                "fr": 20
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "Southwest"
-              },
-              "value": {
-                "en": "SW",
-                "fr": "SO"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-22T22:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 20,
-                "fr": 20
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "Southwest"
-              },
-              "value": {
-                "en": "SW",
-                "fr": "SO"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
               "en": 10,
               "fr": 10
             }
@@ -1869,598 +1636,6 @@
             "value": {
               "en": 0,
               "fr": 0
-            }
-          },
-          "timestamp": "2026-11-22T23:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 20,
-                "fr": 20
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "Southwest"
-              },
-              "value": {
-                "en": "SW",
-                "fr": "SO"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 10,
-              "fr": 10
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T00:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 20,
-                "fr": 20
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "Southwest"
-              },
-              "value": {
-                "en": "SW",
-                "fr": "SO"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 10,
-              "fr": 10
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T01:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T02:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T03:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T04:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T05:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T06:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Mainly cloudy",
-            "fr": "Généralement nuageux"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 33,
-            "url": "https://weather.gc.ca/weathericons/33.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Nil",
-              "fr": "Nulle"
-            },
-            "value": {
-              "en": 0,
-              "fr": 0
-            }
-          },
-          "timestamp": "2026-11-23T07:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 15,
-                "fr": 15
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Chance of showers",
-            "fr": "Possibilité d'averses"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 11,
-              "fr": 11
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 36,
-            "url": "https://weather.gc.ca/weathericons/36.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "Medium",
-              "fr": "Moyenne"
-            },
-            "value": {
-              "en": 60,
-              "fr": 60
             }
           },
           "timestamp": "2026-11-23T08:00:00Z",
@@ -2488,13 +1663,27 @@
                 "en": "SE",
                 "fr": "SE"
               }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
             }
           }
         },
         {
           "condition": {
-            "en": "Chance of showers",
-            "fr": "Possibilité d'averses"
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
           },
           "temperature": {
             "unitType": {
@@ -2506,14 +1695,14 @@
               "fr": "C"
             },
             "value": {
-              "en": 11,
-              "fr": 11
+              "en": 10,
+              "fr": 10
             }
           },
           "iconCode": {
             "format": "png",
-            "value": 36,
-            "url": "https://weather.gc.ca/weathericons/36.gif"
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
           },
           "lop": {
             "units": {
@@ -2521,12 +1710,12 @@
               "fr": "%"
             },
             "category": {
-              "en": "Medium",
-              "fr": "Moyenne"
+              "en": "Nil",
+              "fr": "Nulle"
             },
             "value": {
-              "en": 60,
-              "fr": 60
+              "en": 0,
+              "fr": 0
             }
           },
           "timestamp": "2026-11-23T09:00:00Z",
@@ -2554,13 +1743,27 @@
                 "en": "SE",
                 "fr": "SE"
               }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
             }
           }
         },
         {
           "condition": {
-            "en": "Chance of showers",
-            "fr": "Possibilité d'averses"
+            "en": "Rain at times heavy",
+            "fr": "Pluie parfois forte"
           },
           "temperature": {
             "unitType": {
@@ -2572,14 +1775,14 @@
               "fr": "C"
             },
             "value": {
-              "en": 11,
-              "fr": 11
+              "en": 10,
+              "fr": 10
             }
           },
           "iconCode": {
             "format": "png",
-            "value": 36,
-            "url": "https://weather.gc.ca/weathericons/36.gif"
+            "value": 13,
+            "url": "https://weather.gc.ca/weathericons/13.gif"
           },
           "lop": {
             "units": {
@@ -2587,12 +1790,12 @@
               "fr": "%"
             },
             "category": {
-              "en": "Medium",
-              "fr": "Moyenne"
+              "en": "High",
+              "fr": "Élevée"
             },
             "value": {
-              "en": 60,
-              "fr": 60
+              "en": 100,
+              "fr": 100
             }
           },
           "timestamp": "2026-11-23T10:00:00Z",
@@ -2620,13 +1823,27 @@
                 "en": "SE",
                 "fr": "SE"
               }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
             }
           }
         },
         {
           "condition": {
-            "en": "Chance of showers",
-            "fr": "Possibilité d'averses"
+            "en": "Rain at times heavy",
+            "fr": "Pluie parfois forte"
           },
           "temperature": {
             "unitType": {
@@ -2644,8 +1861,8 @@
           },
           "iconCode": {
             "format": "png",
-            "value": 6,
-            "url": "https://weather.gc.ca/weathericons/06.gif"
+            "value": 13,
+            "url": "https://weather.gc.ca/weathericons/13.gif"
           },
           "lop": {
             "units": {
@@ -2653,12 +1870,12 @@
               "fr": "%"
             },
             "category": {
-              "en": "Medium",
-              "fr": "Moyenne"
+              "en": "High",
+              "fr": "Élevée"
             },
             "value": {
-              "en": 60,
-              "fr": 60
+              "en": 100,
+              "fr": 100
             }
           },
           "timestamp": "2026-11-23T11:00:00Z",
@@ -2685,6 +1902,20 @@
               "value": {
                 "en": "SE",
                 "fr": "SE"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
               }
             }
           }
@@ -2752,6 +1983,20 @@
                 "en": "SE",
                 "fr": "SE"
               }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
             }
           }
         },
@@ -2805,18 +2050,18 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 30,
-                "fr": 30
+                "en": 20,
+                "fr": 20
               }
             },
             "direction": {
               "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
+                "en": "Southeast",
+                "fr": "Sud-est"
               },
               "value": {
-                "en": "S",
-                "fr": "S"
+                "en": "SE",
+                "fr": "SE"
               }
             },
             "gust": {
@@ -2829,8 +2074,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 50,
-                "fr": 50
+                "en": 40,
+                "fr": 40
               }
             }
           }
@@ -2885,8 +2130,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 30,
-                "fr": 30
+                "en": 40,
+                "fr": 40
               }
             },
             "direction": {
@@ -2909,8 +2154,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 50,
-                "fr": 50
+                "en": 70,
+                "fr": 70
               }
             }
           }
@@ -2965,88 +2210,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 30,
-                "fr": 30
-              }
-            },
-            "direction": {
-              "windDirFull": {
-                "en": "South",
-                "fr": "Sud"
-              },
-              "value": {
-                "en": "S",
-                "fr": "S"
-              }
-            },
-            "gust": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 50,
-                "fr": 50
-              }
-            }
-          }
-        },
-        {
-          "condition": {
-            "en": "Rain at times heavy",
-            "fr": "Pluie parfois forte"
-          },
-          "temperature": {
-            "unitType": {
-              "en": "metric",
-              "fr": "metric"
-            },
-            "units": {
-              "en": "C",
-              "fr": "C"
-            },
-            "value": {
-              "en": 14,
-              "fr": 14
-            }
-          },
-          "iconCode": {
-            "format": "png",
-            "value": 13,
-            "url": "https://weather.gc.ca/weathericons/13.gif"
-          },
-          "lop": {
-            "units": {
-              "en": "%",
-              "fr": "%"
-            },
-            "category": {
-              "en": "High",
-              "fr": "Élevée"
-            },
-            "value": {
-              "en": 100,
-              "fr": 100
-            }
-          },
-          "timestamp": "2026-11-23T16:00:00Z",
-          "wind": {
-            "speed": {
-              "unitType": {
-                "en": "metric",
-                "fr": "metric"
-              },
-              "units": {
-                "en": "km/h",
-                "fr": "km/h"
-              },
-              "value": {
-                "en": 50,
-                "fr": 50
+                "en": 40,
+                "fr": 40
               }
             },
             "direction": {
@@ -3113,7 +2278,7 @@
               "fr": 100
             }
           },
-          "timestamp": "2026-11-23T17:00:00Z",
+          "timestamp": "2026-11-23T16:00:00Z",
           "wind": {
             "speed": {
               "unitType": {
@@ -3125,8 +2290,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 50,
-                "fr": 50
+                "en": 40,
+                "fr": 40
               }
             },
             "direction": {
@@ -3193,6 +2358,86 @@
               "fr": 100
             }
           },
+          "timestamp": "2026-11-23T17:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "South",
+                "fr": "Sud"
+              },
+              "value": {
+                "en": "S",
+                "fr": "S"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 70,
+                "fr": 70
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Rain at times heavy",
+            "fr": "Pluie parfois forte"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 16,
+              "fr": 16
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 13,
+            "url": "https://weather.gc.ca/weathericons/13.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "High",
+              "fr": "Élevée"
+            },
+            "value": {
+              "en": 100,
+              "fr": 100
+            }
+          },
           "timestamp": "2026-11-23T18:00:00Z",
           "wind": {
             "speed": {
@@ -3205,8 +2450,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 50,
-                "fr": 50
+                "en": 40,
+                "fr": 40
               }
             },
             "direction": {
@@ -3285,8 +2530,8 @@
                 "fr": "km/h"
               },
               "value": {
-                "en": 50,
-                "fr": 50
+                "en": 40,
+                "fr": 40
               }
             },
             "direction": {
@@ -3314,22 +2559,903 @@
               }
             }
           }
+        },
+        {
+          "condition": {
+            "en": "Rain at times heavy",
+            "fr": "Pluie parfois forte"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 15,
+              "fr": 15
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 13,
+            "url": "https://weather.gc.ca/weathericons/13.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "High",
+              "fr": "Élevée"
+            },
+            "value": {
+              "en": 100,
+              "fr": 100
+            }
+          },
+          "timestamp": "2026-11-23T20:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "South",
+                "fr": "Sud"
+              },
+              "value": {
+                "en": "S",
+                "fr": "S"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 70,
+                "fr": 70
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 14,
+              "fr": 14
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-23T21:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 20,
+                "fr": 20
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "West"
+              },
+              "value": {
+                "en": "W",
+                "fr": "O"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 14,
+              "fr": 14
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-23T22:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 20,
+                "fr": 20
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "West"
+              },
+              "value": {
+                "en": "W",
+                "fr": "O"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 13,
+              "fr": 13
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-23T23:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 20,
+                "fr": 20
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "West"
+              },
+              "value": {
+                "en": "W",
+                "fr": "O"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 13,
+              "fr": 13
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T00:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 20,
+                "fr": 20
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "West"
+              },
+              "value": {
+                "en": "W",
+                "fr": "O"
+              }
+            },
+            "gust": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 40,
+                "fr": 40
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 12,
+              "fr": 12
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T01:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 12,
+              "fr": 12
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T02:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 11,
+              "fr": 11
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T03:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 11,
+              "fr": 11
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T04:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 10,
+              "fr": 10
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T05:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Mainly cloudy",
+            "fr": "Généralement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 10,
+              "fr": 10
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 33,
+            "url": "https://weather.gc.ca/weathericons/33.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T06:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
+        },
+        {
+          "condition": {
+            "en": "Partly cloudy",
+            "fr": "Partiellement nuageux"
+          },
+          "temperature": {
+            "unitType": {
+              "en": "metric",
+              "fr": "metric"
+            },
+            "units": {
+              "en": "C",
+              "fr": "C"
+            },
+            "value": {
+              "en": 9,
+              "fr": 9
+            }
+          },
+          "iconCode": {
+            "format": "png",
+            "value": 32,
+            "url": "https://weather.gc.ca/weathericons/32.gif"
+          },
+          "lop": {
+            "units": {
+              "en": "%",
+              "fr": "%"
+            },
+            "category": {
+              "en": "Nil",
+              "fr": "Nulle"
+            },
+            "value": {
+              "en": 0,
+              "fr": 0
+            }
+          },
+          "timestamp": "2026-11-24T07:00:00Z",
+          "wind": {
+            "speed": {
+              "unitType": {
+                "en": "metric",
+                "fr": "metric"
+              },
+              "units": {
+                "en": "km/h",
+                "fr": "km/h"
+              },
+              "value": {
+                "en": 5,
+                "fr": 5
+              }
+            },
+            "direction": {
+              "windDirFull": {
+                "en": "Variable direction",
+                "fr": "Direction variable"
+              },
+              "value": {
+                "en": "VR",
+                "fr": "VR"
+              }
+            }
+          }
         }
       ]
     },
-    "warnings": [],
+    "warnings": [
+      {
+        "expiryTime": {
+          "en": "2026-11-23T18:00:30Z",
+          "fr": "2026-11-23T18:00:30Z"
+        },
+        "description": {
+          "en": "SPECIAL WEATHER STATEMENT",
+          "fr": "BULLETIN MÉTÉOROLOGIQUE SPÉCIAL"
+        },
+        "eventIssue": {
+          "en": "2026-11-23T02:00:30Z",
+          "fr": "2026-11-23T02:00:30Z"
+        },
+        "type": {
+          "en": "statement",
+          "fr": "statement"
+        },
+        "url": {
+          "en": "https://weather.gc.ca/warnings/report_e.html?ns1#1835566181315912968202611220506",
+          "fr": "https://meteo.gc.ca/warnings/report_f.html?ns1#1835566181315912968202611220506"
+        }
+      }
+    ],
     "riseSet": {
       "disclaimer": {
         "en": "The information provided here, for the times of the rise and set of the sun, is an estimate included as a convenience to our clients. Values shown here may differ from the official sunrise/sunset data available from (http://hia-iha.nrc-cnrc.gc.ca/sunrise_e.html)",
         "fr": "Les heures de lever et coucher du soleil sont une estimation seulement et peuvent être différentes des heures officielles de lever et coucher du soleil disponibles ici ( http://hia-iha.nrc-cnrc.gc.ca/sunrise_f.html )"
       },
       "sunrise": {
-        "en": "2026-11-22T11:20:00Z",
-        "fr": "2026-11-22T11:20:00Z"
+        "en": "2026-11-23T11:21:00Z",
+        "fr": "2026-11-23T11:21:00Z"
       },
       "sunset": {
-        "en": "2026-11-22T20:41:00Z",
-        "fr": "2026-11-22T20:41:00Z"
+        "en": "2026-11-23T20:40:00Z",
+        "fr": "2026-11-23T20:40:00Z"
       }
     }
   }
