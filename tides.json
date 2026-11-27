@@ -2,28 +2,8 @@
   "source": "https://www.tidetime.org/north-america/canada/nova-scotia.htm",
   "location": "Nova Scotia",
   "timezone": "America/Halifax",
-  "updated_utc": "2026-11-26T21:29:37.254961+00:00",
+  "updated_utc": "2026-11-27T08:28:50.769489+00:00",
   "tides": [
-    {
-      "type": "Low",
-      "time": "2:45am",
-      "height_m": 0.38
-    },
-    {
-      "type": "High",
-      "time": "8:39am",
-      "height_m": 1.95
-    },
-    {
-      "type": "Low",
-      "time": "3:30pm",
-      "height_m": 0.03
-    },
-    {
-      "type": "High",
-      "time": "9:29pm",
-      "height_m": 1.74
-    },
     {
       "type": "Low",
       "time": "3:42am",
@@ -138,6 +118,26 @@
       "type": "Low",
       "time": "9:24pm",
       "height_m": 0.33
+    },
+    {
+      "type": "High",
+      "time": "3:24am",
+      "height_m": 1.7
+    },
+    {
+      "type": "Low",
+      "time": "10:12am",
+      "height_m": 0.42
+    },
+    {
+      "type": "High",
+      "time": "3:46pm",
+      "height_m": 1.49
+    },
+    {
+      "type": "Low",
+      "time": "10:17pm",
+      "height_m": 0.39
     }
   ]
 }
